@@ -1,0 +1,121 @@
+
+:root{
+    --mainColor:#ff206e;
+}
+.text-mainColor{
+    color: var(--mainColor);
+}
+.header{
+    background-image: url("../img/me.jpg");
+    background-size: cover;
+    background-position: center center;
+    /* new */
+    transition: all 1s;
+}
+body{
+    background-image: url("../img/light_dot.jpg");
+}
+.header .icons{
+    width: 18%;
+}
+.header .icons i{
+    border:1px solid #222;
+    transition: all 1s;
+}
+.header .icons i:hover{
+    border-color:  #fff ;
+    color: var(--mainColor);
+}
+.navbar-dark .navbar-nav li:first-child a{
+    color: var(--mainColor);
+}
+.title h2{
+    color: #f1f1f1;
+    font-size: 5rem;
+}
+.title h3{
+    font-size: 2.5rem;
+}
+.services{
+    background-image: url("../img/dark_dot.jpg");
+}
+.services .title h2{
+    color: #222;
+}
+.services .title h3{
+    color: #fff;
+}
+.services-item h4{
+    position: relative;
+}
+.services-item h4:after{
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor);
+    top: 32px;
+    left: 40%;
+    width: 20%;
+    height: 4px;
+
+}
+.nav-tabs  .nav-item.show  .nav-link, .nav-tabs .nav-link.active{
+    color: var(--mainColor);
+    background-color: transparent;
+}
+.nav-tabs .nav-link{
+    border: 0;
+    color: #000;
+    font-weight: 700;
+}
+.services i{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    border-radius: 50%;
+    position: absolute;
+    top: -33px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 22px;
+    border: 3px solid white;
+}
+/* new */
+.navbar{
+    transition: all 1s;
+}
+.btn-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+}
+.options ul{
+    display: flex;
+    list-style-type: none;
+}
+.options ul li{
+    width: 20px;
+    height: 20px;
+    background-color:teal;
+    margin: 5px;
+    cursor: pointer;
+}
+.options img{
+    width: 40px;
+    cursor: pointer;
+}
+.options{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+}
+.options .fa-cog{
+    border: 1px solid #0dcaf0;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
